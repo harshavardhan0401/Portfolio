@@ -3,10 +3,9 @@ import Button from "../ui/Button";
 
 export default function Navbar() {
   return (
-    <header className="fixed top-6 left-0 w-full z-50">
+    <header className="fixed top-6 left-0 right-0 z-50">
       <Container>
-        <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between rounded-full border border-white/10 bg-white/5 px-4 backdrop-blur-xl">
-
+        <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between rounded-full border border-white/10 bg-white/5 px-5 backdrop-blur-xl">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span className="text-3xl font-bold tracking-tight">

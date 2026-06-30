@@ -9,7 +9,7 @@ export default function FeaturedProjectCard() {
       initial="hidden"
       animate="visible"
       variants={slideLeft}
-      className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-br from-[#111827] to-[#0B1220] p-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_80px_rgba(16,185,129,0.18)] hover:border-emerald-500/40"
+      className="group relative w-full overflow-hidden rounded-[24px] border border-white/10 bg-gradient-to-br from-[#111827] to-[#0B1220] p-6 shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(16,185,129,0.18)] hover:border-emerald-500/40"
     >
       {/* Shine Effect */}
       <div
@@ -18,7 +18,7 @@ export default function FeaturedProjectCard() {
           absolute
           inset-0
           overflow-hidden
-          rounded-[28px]
+          rounded-[24px]
         "
       >
         <div
@@ -65,22 +65,22 @@ export default function FeaturedProjectCard() {
       </span>
 
       {/* Title */}
-      <h3 className="mt-6 text-4xl font-bold text-white">
+      <h3 className="mt-5 text-3xl font-bold text-white">
         CRUX
       </h3>
 
       {/* Subtitle */}
-      <p className="mt-3 leading-7 text-gray-400">
+      <p className="mt-2 text-sm leading-6 text-gray-400">
         A platform that helps college students discover teammates,
         collaborate on projects, and showcase their skills.
       </p>
 
       {/* Tech Stack */}
-      <div className="mt-8 flex flex-wrap gap-2">
+      <div className="mt-5 flex flex-wrap gap-2">
         {["React", "Firebase", "Tailwind"].map((tech) => (
           <span
             key={tech}
-            className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-zinc-300 transition-all duration-300 hover:border-emerald-500/30 hover:bg-emerald-500/10"
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-zinc-300 transition-all duration-300 hover:border-emerald-500/30 hover:bg-emerald-500/10"
           >
             {tech}
           </span>
@@ -89,7 +89,7 @@ export default function FeaturedProjectCard() {
 
       {/* Project Stats */}
       <motion.div 
-        className="mt-8 grid grid-cols-3 gap-4"
+        className="mt-5 grid grid-cols-3 gap-3"
         initial="hidden"
         animate="visible"
         transition={{
@@ -102,8 +102,8 @@ export default function FeaturedProjectCard() {
             hidden: { opacity: 0, y: 15, },
             visible: { opacity: 1, y: 0,},
           }}
-         className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-          <p className="text-2xl font-bold text-emerald-400">
+         className="rounded-2xl border border-white/10 bg-white/5 p-2.5 text-center">
+          <p className="text-lg font-bold text-emerald-400">
             3+
           </p>
           <p className="mt-1 text-xs text-zinc-400">
@@ -116,8 +116,8 @@ export default function FeaturedProjectCard() {
             hidden: { opacity: 0, y: 15, },
             visible: { opacity: 1, y: 0,},
           }}
-         className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">
-          <p className="text-2xl font-bold text-emerald-400">
+         className="rounded-2xl border border-white/10 bg-white/5 p-2.5 text-center">
+          <p className="text-xl font-bold text-emerald-400">
             100%
           </p>
           <p className="mt-1 text-xs text-zinc-400">
@@ -130,7 +130,7 @@ export default function FeaturedProjectCard() {
             hidden: { opacity: 0, y: 15, },
             visible: { opacity: 1, y: 0,},
           }}
-         className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center">           <p className="text-2xl font-bold text-emerald-400">
+         className="rounded-2xl border border-white/10 bg-white/5 p-2.5 text-center">           <p className="text-xl font-bold text-emerald-400">
             Live
           </p>
           <p className="mt-1 text-xs text-zinc-400">
@@ -140,18 +140,18 @@ export default function FeaturedProjectCard() {
       </motion.div>
 
       {/* Current Focus */}
-      <div className="mt-8 rounded-2xl border border-white/10 bg-white/5 p-5">
-        <p className="text-sm uppercase tracking-widest text-zinc-500">
+      <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-3.5">
+        <p className="text-xs uppercase tracking-widest text-zinc-500">
           Current Focus
         </p>
 
-        <h4 className="mt-2 text-xl font-semibold leading-8 text-white">
+        <h4 className="mt-1.5 text-base font-semibold leading-6 text-white">
           Building the future of student collaboration.
         </h4>
       </div>
 
       {/* Buttons */}
-      <div className="mt-8 flex gap-4">
+      <div className="mt-5 flex gap-3">
         <Button>
           Live Demo →
         </Button>

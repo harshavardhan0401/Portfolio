@@ -30,7 +30,7 @@ export default function Hero() {
       <div className="absolute left-1/2 top-40 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-3xl" />
 
       <Container>
-        <div className="grid items-center gap-16 lg:grid-cols-2">
+        <div className="grid items-start gap-8 lg:grid-cols-[1fr_480px]">
           {/* ================= LEFT SIDE ================= */}
           <div>
             {/* Status Badge */}
@@ -38,7 +38,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-300"
+              className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-xs text-emerald-300 sm:text-sm"
             >
               <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
               Available for Internships
@@ -52,7 +52,7 @@ export default function Hero() {
                 duration: 0.7,
                 delay: 0.2,
               }}
-              className="font-['Space_Grotesk'] text-5xl font-bold leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+              className="font-['Space_Grotesk'] text-4xl font-bold leading-[0.95] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Crafting modern
               <br />
@@ -67,7 +67,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               custom={0.4}
-              className="mt-8 max-w-xl text-lg leading-8 text-gray-400 md:text-xl"
+              className="mt-6 max-w-lg text-base leading-7 text-gray-400 md:text-lg"
             >
               Hi, I'm Harsha Vardhan — a Full Stack Developer passionate about
               building modern web applications with React, Java, Firebase, and
@@ -80,7 +80,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               custom={0.6}
-              className="mt-10 flex flex-wrap gap-4"
+              className="mt-8 flex flex-wrap gap-3"
             >
               <Button>
                 Explore Projects →
@@ -97,7 +97,7 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               custom={0.8}
-              className="mt-10 flex flex-wrap gap-3"
+              className="mt-8 flex flex-wrap gap-2"
             >
               {[
                 "React",
@@ -108,7 +108,7 @@ export default function Hero() {
               ].map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-300 transition hover:border-emerald-500/30 hover:bg-emerald-500/10"
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-zinc-300 transition hover:border-emerald-500/30 hover:bg-emerald-500/10 sm:text-sm"
                 >
                   {tech}
                 </span>
@@ -117,8 +117,10 @@ export default function Hero() {
           </div>
 
           {/* ================= RIGHT SIDE ================= */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex justify-end pt-8">
+            <div className="w-full max-w-[560px]">
             <FeaturedProjectCard />
+            </div>
           </div>
         </div>
       </Container>
@@ -131,9 +133,9 @@ export default function Hero() {
           delay: 2,
           duration: 1,
         }}
-        className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center text-zinc-500"
+        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center text-zinc-500"
       >
-        <span className="text-sm uppercase tracking-[0.25em]">
+        <span className="text-xs uppercase tracking-[0.25em]">
           Scroll
         </span>
 
@@ -146,7 +148,7 @@ export default function Hero() {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="mt-3 h-8 w-[1px] bg-emerald-400"
+          className="mt-2 h-6 w-[1px] bg-emerald-400"
         />
       </motion.div>
     </Section>
