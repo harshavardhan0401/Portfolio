@@ -1,21 +1,14 @@
 :root {
-  /* Colors */
-  --bg: #09090b;
-  --surface: #111827;
+  --background: #070A08;
+  --surface: #0F1612;
 
-  --primary: #3b82f6;
-  --primary-hover: #2563eb;
+  --primary: #10B981;
+  --primary-hover: #059669;
 
-  --accent: #06b6d4;
+  --accent: #34D399;
 
-  --text: #ffffff;
-  --muted: #9ca3af;
+  --text: #FFFFFF;
+  --muted: #A1A1AA;
 
-  --border: rgba(255,255,255,0.08);
-
-  /* Radius */
-  --radius: 16px;
-
-  /* Transition */
-  --transition: 300ms ease;
+  --border: rgba(255,255,255,.08);
 }

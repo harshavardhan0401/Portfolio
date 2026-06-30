@@ -8,9 +8,9 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-blue-500 text-white hover:bg-blue-600 hover:scale-105",
+      "bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/20",
     outline:
-      "border border-white/20 text-white hover:bg-white/10 hover:scale-105",
+      "border border-white/10 hover:border-emerald-500 hover:bg-emerald-500/10",
   };
 
   return (

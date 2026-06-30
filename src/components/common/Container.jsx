@@ -1,7 +1,11 @@
-export default function Container({ children }) {
+export default function Section({
+  children,
+  className = "",
+  padding = "py-24",
+}) {
   return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className={`${padding} ${className}`}>
       {children}
-    </div>
+    </section>
   );
 }
