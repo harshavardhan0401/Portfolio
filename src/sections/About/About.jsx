@@ -16,7 +16,7 @@ export default function About() {
   return (
     <Section
       id="about"
-      className="relative overflow-hidden"
+      className="relative flex min-h-screen items-center overflow-hidden"
     >
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_520px]">
@@ -32,7 +32,7 @@ export default function About() {
               About Me
             </span>
 
-            <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
+            <h2 className="font-display mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-5xl">
               Building software that solves real problems.
             </h2>
 
@@ -69,19 +69,41 @@ export default function About() {
                 relative
                 w-full
                 max-w-[520px]
+                overflow-hidden
                 rounded-3xl
                 border
                 border-white/10
-                bg-white/5
+                bg-gradient-to-br
+                from-[#111827]
+                to-[#0B1220]
                 p-7
-                backdrop-blur-xl
+                shadow-[0_20px_60px_rgba(0,0,0,0.45)]
                 transition-all
                 duration-500
                 hover:border-emerald-500/30
-                hover:shadow-[0_0_40px_rgba(16,185,129,0.12)]
+                hover:shadow-[0_30px_80px_rgba(16,185,129,0.18)]
               "
             >
-              <div className="space-y-5">
+              {/* Glow (matches FeaturedProjectCard) */}
+              <div
+                className="
+                  pointer-events-none
+                  absolute
+                  -right-24
+                  -top-24
+                  h-72
+                  w-72
+                  rounded-full
+                  bg-emerald-500/15
+                  blur-3xl
+                  transition-all
+                  duration-700
+                  group-hover:scale-125
+                  group-hover:bg-emerald-400/30
+                "
+              />
+
+              <div className="relative space-y-5">
                 {/* Education */}
                 <div
                   className="

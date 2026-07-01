@@ -12,3 +12,7 @@
 
   --border: rgba(255,255,255,.08);
 }
+
+@theme {
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}

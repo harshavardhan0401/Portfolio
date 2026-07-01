@@ -52,7 +52,7 @@ export default function Hero() {
                 duration: 0.7,
                 delay: 0.2,
               }}
-              className="font-['Space_Grotesk'] text-4xl font-bold leading-[0.95] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+              className="font-display text-4xl font-bold leading-[0.95] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Crafting modern
               <br />
