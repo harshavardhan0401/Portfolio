@@ -9,7 +9,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 const SOCIALS = [
   { icon: HiEnvelope, href: "mailto:your.email@example.com", label: "Email" },
   { icon: FaGithub, href: "https://github.com/harshavardhan0401", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://linkedin.com/in/your-profile", label: "LinkedIn" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/harsha-vardhan-029447355/", label: "LinkedIn" },
 ];
 
 export default function Footer() {

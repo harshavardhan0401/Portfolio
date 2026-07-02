@@ -16,14 +16,14 @@ const CONTACT_LINKS = [
   {
     icon: HiEnvelope,
     label: "Email",
-    value: "your.email@example.com",
-    href: "mailto:your.email@example.com",
+    value: "harshavardhanuddangi@gmail.com",
+    href: "mailto:harshavardhanuddangi@gmail.com",
   },
   {
     icon: FaLinkedin,
     label: "LinkedIn",
-    value: "/in/your-profile",
-    href: "https://linkedin.com/in/your-profile",
+    value: "/in/harsha-vardhan-029447355/",
+    href: "https://www.linkedin.com/in/harsha-vardhan-029447355/",
   },
   {
     icon: FaGithub,
