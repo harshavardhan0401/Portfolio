@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Button from "./Button";
 import { slideLeft } from "../../utils/animations";
-import { HiDatabase } from "react-icons/hi";
 
 export default function FeaturedProjectCard() {
   return (

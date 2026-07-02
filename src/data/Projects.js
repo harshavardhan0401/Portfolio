@@ -25,16 +25,16 @@ export const projects = [
     githubUrl: "https://github.com/harshavardhan0401/Portfolio",
   },
   {
-    id: "project-three",
-    name: "Third project",
-    tagline: "Slot open",
+    id: "nexus",
+    name: "Nexus",
+    tagline: "AI-powered sneaker e-commerce",
     description:
-      "Swap this entry out once it's built — Expense Tracker, Task Manager, and Movie App were the options on the table.",
+      "A cyberpunk-themed sneaker store built for the Indian market, with an AI-powered recommendation engine, real-time Firebase cart sync, and a glassmorphism UI with neon accents.",
+    // add a real screenshot to src/assets/images and set this, e.g. "/assets/images/nexus.png"
     image: null,
-    tech: [],
+    tech: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
     featured: false,
-    liveUrl: null,
-    githubUrl: null,
-    comingSoon: true,
+    liveUrl: "https://nexus-sneakers.netlify.app/",
+    githubUrl: "https://github.com/harshavardhan0401/Nexus",
   },
 ];
