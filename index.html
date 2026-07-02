@@ -17,5 +17,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!--
+      Netlify detects forms by scanning static HTML at build time.
+      The real form only exists inside the React bundle at runtime,
+      so this hidden duplicate (same name + field names as Contact.jsx)
+      is what lets Netlify register "contact" and accept submissions.
+    -->
+    <form name="contact" data-netlify="true" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>

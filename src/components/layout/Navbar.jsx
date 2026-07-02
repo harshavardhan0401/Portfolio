@@ -42,7 +42,7 @@ export default function Navbar() {
 
           </ul>
 
-          <Button variant="outline">
+          <Button href="/resume.pdf" variant="outline">
             Resume ↗
           </Button>
 

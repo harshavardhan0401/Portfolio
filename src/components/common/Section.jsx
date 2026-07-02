@@ -1,6 +1,6 @@
-export default function Section({ children, className = "" }) {
+export default function Section({ children, className = "", id }) {
   return (
-    <section className={`py-24 ${className}`}>
+    <section id={id} className={`py-24 ${className}`}>
       {children}
     </section>
   );
