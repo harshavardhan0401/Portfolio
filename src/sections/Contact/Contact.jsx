@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HiEnvelope, HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
 
 import Container from "../../components/common/Container";
 import Section from "../../components/common/Section";
@@ -11,7 +12,7 @@ import Button from "../../components/ui/Button";
 
 import { fadeUp } from "../../utils/animations";
 
-// TODO: replace with your real details
+// TODO: replace with your real detailss
 const CONTACT_LINKS = [
   {
     icon: HiEnvelope,
@@ -32,11 +33,18 @@ const CONTACT_LINKS = [
     href: "https://github.com/harshavardhan0401",
   },
   {
+  icon: SiLeetcode,
+  label: "LeetCode",
+  value: "leetcode.com/u/harsha_vardhan0401/",
+  href: "https://leetcode.com/u/harsha_vardhan0401/",
+  },
+  {
     icon: HiOutlineDocumentArrowDown,
     label: "Resume",
     value: "Download PDF",
     href: "/resume.pdf",
   },
+  
 ];
 
 function encodeForm(data) {
