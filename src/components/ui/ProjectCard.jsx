@@ -65,6 +65,8 @@ export default function ProjectCard({ project, featured = false, index = 0 }) {
           <img
             src={image}
             alt={`${name} preview`}
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
