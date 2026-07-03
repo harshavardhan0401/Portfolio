@@ -6,8 +6,7 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import ProjectCard from "../../components/ui/ProjectCard";
 
 import { fadeUp } from "../../utils/animations";
-import { projects } from "../../data/projects";
-
+import { projects } from "../../data/Projects";
 export default function Projects() {
   const featured = projects.find((project) => project.featured);
   const rest = projects.filter((project) => !project.featured);

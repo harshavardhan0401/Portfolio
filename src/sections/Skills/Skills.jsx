@@ -6,8 +6,7 @@ import SectionHeading from "../../components/ui/SectionHeading";
 import SkillCard from "../../components/ui/SkillCard";
 
 import { fadeUp } from "../../utils/animations";
-import { skillCategories } from "../../data/skills";
-
+import { skillCategories } from "../../data/Skills";
 export default function Skills() {
   return (
     <Section id="skills">
