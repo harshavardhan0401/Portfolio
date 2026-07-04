@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import { HiArrowUpRight } from "react-icons/hi2";
 import { FaGithub } from "react-icons/fa6";
 
@@ -15,6 +15,23 @@ export default function ProjectCard({ project, featured = false, index = 0 }) {
     githubUrl,
     comingSoon,
   } = project;
+
+  // Subtle tilt on hover — mouse position within the card drives rotation.
+  const pointerX = useMotionValue(0);
+  const pointerY = useMotionValue(0);
+  const rotateX = useTransform(pointerY, [-0.5, 0.5], ["4deg", "-4deg"]);
+  const rotateY = useTransform(pointerX, [-0.5, 0.5], ["-4deg", "4deg"]);
+
+  function handleMouseMove(e) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    pointerX.set((e.clientX - rect.left) / rect.width - 0.5);
+    pointerY.set((e.clientY - rect.top) / rect.height - 0.5);
+  }
+
+  function handleMouseLeave() {
+    pointerX.set(0);
+    pointerY.set(0);
+  }
 
   if (comingSoon) {
     return (
@@ -46,6 +63,9 @@ export default function ProjectCard({ project, featured = false, index = 0 }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      style={{ rotateX, rotateY, transformPerspective: 800 }}
       className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-[#111827] to-[#0B1220] shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-all duration-500 hover:-translate-y-2 hover:border-emerald-500/40 hover:shadow-[0_30px_80px_rgba(16,185,129,0.18)] ${
         featured ? "md:grid md:grid-cols-2 md:items-stretch" : ""
       }`}

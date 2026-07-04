@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiBars3, HiXMark } from "react-icons/hi2";
 
@@ -6,14 +6,40 @@ import Container from "../common/Container";
 import Button from "../ui/Button";
 
 const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "About", id: "about" },
+  { href: "#skills", label: "Skills", id: "skills" },
+  { href: "#projects", label: "Projects", id: "projects" },
+  { href: "#contact", label: "Contact", id: "contact" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeId, setActiveId] = useState("");
+
+  // Scroll-spy: highlight whichever nav section currently sits near the
+  // vertical center of the viewport, using a thin IntersectionObserver band.
+  useEffect(() => {
+    const sections = NAV_LINKS.map((link) => document.getElementById(link.id)).filter(
+      Boolean
+    );
+
+    if (sections.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header className="fixed top-6 left-0 right-0 z-50">
@@ -28,13 +54,28 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8 text-sm text-zinc-300">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <a href={link.href} className="transition hover:text-white">
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {NAV_LINKS.map((link) => {
+              const isActive = activeId === link.id;
+              return (
+                <li key={link.href} className="relative">
+                  <a
+                    href={link.href}
+                    className={`transition hover:text-white ${
+                      isActive ? "text-white" : ""
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-active-indicator"
+                      className="absolute -bottom-1.5 left-0 right-0 h-px bg-emerald-400"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </li>
+              );
+            })}
           </ul>
 
           <div className="hidden md:block">
@@ -75,7 +116,9 @@ export default function Navbar() {
                     <a
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block rounded-xl px-3 py-3 transition hover:bg-emerald-500/10 hover:text-white"
+                      className={`block rounded-xl px-3 py-3 transition hover:bg-emerald-500/10 hover:text-white ${
+                        activeId === link.id ? "bg-emerald-500/10 text-white" : ""
+                      }`}
                     >
                       {link.label}
                     </a>
