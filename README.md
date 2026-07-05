@@ -18,19 +18,27 @@ A modern, responsive portfolio website built to showcase my projects, technical 
 
 ### Hero Section
 
-![Hero](./screenshots/hero.png)
+![Hero]<img width="1541" height="915" alt="image" src="https://github.com/user-attachments/assets/30140a1a-7449-4455-9527-78a87ff3c0a2" />
+
 
 ### About Section
 
-![About](./screenshots/about.png)
+![About]<img width="1900" height="912" alt="image" src="https://github.com/user-attachments/assets/cb6a1157-3570-4c1b-bb11-c46250bd89de" />
+
 
 ### Skills Section
 
-![Skills](./screenshots/skills.png)
+![Skills]<img width="1895" height="912" alt="image" src="https://github.com/user-attachments/assets/864419c7-c6bb-482f-940a-805b0a91cdf3" />
+
 
 ### Projects Section
 
-![Projects](./screenshots/projects.png)
+![Projects]<img width="1893" height="912" alt="image" src="https://github.com/user-attachments/assets/ce6fec4a-0d26-47e3-8841-f97996a730bd" />
+
+### Contacts Section
+
+![Contacts]<img width="1897" height="921" alt="image" src="https://github.com/user-attachments/assets/11dc73ec-e472-40d5-a5c1-9c96c8172b03" />
+
 
 ---
 
@@ -142,9 +150,9 @@ npm run build
 
 - ✅ Hero Section
 - ✅ About Section
-- 🚧 Skills Section
-- 🚧 Projects Section
-- 🚧 Contact Section
+- ✅ Skills Section
+- ✅ Projects Section
+- ✅ Contact Section
 - 🚧 Mobile Optimization
 
 ---
@@ -154,7 +162,6 @@ npm run build
 - Add project filtering
 - Blog section
 - Dark/Light theme toggle
-- Interactive project showcase
 - Better SEO optimization
 - Performance improvements
 - Accessibility enhancements
@@ -171,9 +178,9 @@ I enjoy creating responsive user interfaces, solving real-world problems through
 
 # 🤝 Connect With Me
 
-- 💼 LinkedIn: https://linkedin.com/in/YOUR-LINKEDIN
+- 💼 LinkedIn: https://www.linkedin.com/in/harsha-vardhan-029447355/
 - 💻 GitHub: https://github.com/harshavardhan0401
-- 📧 Email: your.email@example.com
+- 📧 Email: harshavardhanuddangi@email.com
 
 ---
 
@@ -183,6 +190,3 @@ If you like this project, consider giving it a ⭐ on GitHub!
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
