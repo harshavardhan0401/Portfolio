@@ -5,9 +5,8 @@ import Container from "../../components/common/Container";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
-// TODO: keep these in sync with the real links in Contact.jsx
 const SOCIALS = [
-  { icon: HiEnvelope, href: "mailto:your.email@example.com", label: "Email" },
+  { icon: HiEnvelope, href: "mailto:harshavardhanuddangi@gmail.com", label: "Email" },
   { icon: FaGithub, href: "https://github.com/harshavardhan0401", label: "GitHub" },
   { icon: FaLinkedin, href: "https://www.linkedin.com/in/harsha-vardhan-029447355/", label: "LinkedIn" },
 ];

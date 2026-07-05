@@ -12,7 +12,6 @@ import Button from "../../components/ui/Button";
 
 import { fadeUp } from "../../utils/animations";
 
-// TODO: replace with your real detailss
 const CONTACT_LINKS = [
   {
     icon: HiEnvelope,
