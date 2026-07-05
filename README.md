@@ -33,7 +33,8 @@ A modern, responsive portfolio website built to showcase my projects, technical 
 
 ### Projects Section
 
-![Projects]<img width="1893" height="912" alt="image" src="https://github.com/user-attachments/assets/ce6fec4a-0d26-47e3-8841-f97996a730bd" />
+![Projects]<img width="1038" height="860" alt="image" src="https://github.com/user-attachments/assets/f063edd9-56f2-46c8-832a-b6006ec07e27" />
+
 
 ### Contacts Section
 
