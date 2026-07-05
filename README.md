@@ -1,19 +1,188 @@
-# React + Vite
+# 🌐 Harsha Vardhan | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built to showcase my projects, technical skills, and journey as a Full Stack Developer.
 
-Currently, two official plugins are available:
+> Designed with a focus on clean UI, smooth animations, and a premium user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Portfolio:** [https://your-portfolio-link.netlify.app](https://harshavardhan-portfoli0.netlify.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Preview
 
-## Live Demo - 
-https://harshavardhan-portfoli0.netlify.app/
+> Add screenshots here after deployment.
+
+### Hero Section
+
+![Hero](./screenshots/hero.png)
+
+### About Section
+
+![About](./screenshots/about.png)
+
+### Skills Section
+
+![Skills](./screenshots/skills.png)
+
+### Projects Section
+
+![Projects](./screenshots/projects.png)
+
+---
+
+# ✨ Features
+
+- 🎨 Modern UI with Glassmorphism
+- ⚡ Smooth animations using Framer Motion
+- 💡 Interactive hover effects
+- 🌌 Dynamic mouse spotlight effect
+- 📱 Fully Responsive Design
+- 🎯 Clean component-based architecture
+- 🚀 Fast performance with Vite
+- 🌙 Dark theme interface
+
+---
+
+# 🛠 Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### Languages
+
+- JavaScript
+- HTML5
+- CSS3
+
+### Backend & Database
+
+- Java
+- Firebase
+- SQL
+
+### Tools
+
+- Git
+- GitHub
+- VS Code
+- Figma
+
+---
+
+# 📂 Project Structure
+
+```text
+src
+│
+├── components
+│   ├── common
+│   ├── layout
+│   └── ui
+│
+├── hooks
+│
+├── sections
+│   ├── Hero
+│   ├── About
+│   ├── Skills
+│   ├── Projects
+│   ├── Contact
+│
+├── utils
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/harshavardhan0401/Portfolio.git
+```
+
+Navigate into the project
+
+```bash
+cd Portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 🎯 Current Status
+
+- ✅ Hero Section
+- ✅ About Section
+- 🚧 Skills Section
+- 🚧 Projects Section
+- 🚧 Contact Section
+- 🚧 Mobile Optimization
+
+---
+
+# 📈 Future Improvements
+
+- Add project filtering
+- Blog section
+- Dark/Light theme toggle
+- Interactive project showcase
+- Better SEO optimization
+- Performance improvements
+- Accessibility enhancements
+
+---
+
+# 👨‍💻 About Me
+
+Hi, I'm **Harsha Vardhan**, a Computer Science student passionate about building modern web applications.
+
+I enjoy creating responsive user interfaces, solving real-world problems through software, and continuously improving my skills in Full Stack Development and Data Structures & Algorithms.
+
+---
+
+# 🤝 Connect With Me
+
+- 💼 LinkedIn: https://linkedin.com/in/YOUR-LINKEDIN
+- 💻 GitHub: https://github.com/harshavardhan0401
+- 📧 Email: your.email@example.com
+
+---
+
+# ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
