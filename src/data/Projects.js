@@ -18,10 +18,10 @@ export const projects = [
     tagline: "This site",
     description:
       "A personal developer portfolio with a dark, motion-driven design system built to walk visitors through who I am and what I build.",
-    image: null,
+    image: "https://github.com/user-attachments/assets/30140a1a-7449-4455-9527-78a87ff3c0a2",
     tech: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
     featured: false,
-    liveUrl: null,
+    liveUrl: "https://harshavardhan-portfoli0.netlify.app/",
     githubUrl: "https://github.com/harshavardhan0401/Portfolio",
   },
   {
