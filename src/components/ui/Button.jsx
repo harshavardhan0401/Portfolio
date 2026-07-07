@@ -6,7 +6,7 @@ export default function Button({
   ...rest
 }) {
   const baseStyles =
-    "inline-flex items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-sm font-medium transition-all duration-300";
+    "inline-flex items-center justify-center gap-1.5 rounded-xl px-5 py-2.5 text-sm font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B]";
 
   const variants = {
     primary:

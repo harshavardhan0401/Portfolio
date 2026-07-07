@@ -17,27 +17,27 @@ A modern, responsive portfolio website built to showcase my projects, technical 
 
 ### Hero Section
 
-<img width="1541" height="915" alt="image" src="https://github.com/user-attachments/assets/30140a1a-7449-4455-9527-78a87ff3c0a2" />
+![Hero]<img width="1541" height="915" alt="image" src="https://github.com/user-attachments/assets/30140a1a-7449-4455-9527-78a87ff3c0a2" />
 
 
 ### About Section
 
-<img width="1900" height="912" alt="image" src="https://github.com/user-attachments/assets/cb6a1157-3570-4c1b-bb11-c46250bd89de" />
+![About]<img width="1900" height="912" alt="image" src="https://github.com/user-attachments/assets/cb6a1157-3570-4c1b-bb11-c46250bd89de" />
 
 
 ### Skills Section
 
-<img width="1895" height="912" alt="image" src="https://github.com/user-attachments/assets/864419c7-c6bb-482f-940a-805b0a91cdf3" />
+![Skills]<img width="1895" height="912" alt="image" src="https://github.com/user-attachments/assets/864419c7-c6bb-482f-940a-805b0a91cdf3" />
 
 
 ### Projects Section
 
-<img width="1038" height="860" alt="image" src="https://github.com/user-attachments/assets/f063edd9-56f2-46c8-832a-b6006ec07e27" />
+![Projects]<img width="1038" height="860" alt="image" src="https://github.com/user-attachments/assets/f063edd9-56f2-46c8-832a-b6006ec07e27" />
 
 
 ### Contacts Section
 
-<img width="1897" height="921" alt="image" src="https://github.com/user-attachments/assets/11dc73ec-e472-40d5-a5c1-9c96c8172b03" />
+![Contacts]<img width="1897" height="921" alt="image" src="https://github.com/user-attachments/assets/11dc73ec-e472-40d5-a5c1-9c96c8172b03" />
 
 
 ---

@@ -5,8 +5,7 @@ export const projects = [
     tagline: "LinkedIn + GitHub + Tinder for student teams",
     description:
       "A student collaboration platform that helps college students discover teammates, form project squads, and showcase their skills — matched by complementary skillsets instead of random group formation.",
-    // add a real screenshot to src/assets/images and set this, e.g. "/assets/images/crux.png"
-    image: null,
+    image: "https://github.com/user-attachments/assets/ba83f5f7-6b10-4e0e-9ce4-9358b9d46fce",
     tech: ["React", "Vite", "Zustand", "Tailwind CSS"],
     featured: true,
     liveUrl: "https://cruxsite.netlify.app",
@@ -30,7 +29,7 @@ export const projects = [
     tagline: "AI-powered sneaker e-commerce",
     description:
       "A cyberpunk-themed sneaker store built for the Indian market, with an AI-powered recommendation engine, real-time Firebase cart sync, and a glassmorphism UI with neon accents.",
-    // add a real screenshot to src/assets/images and set this, e.g. "/assets/images/nexus.png"
+    // add a real screenshot to public/projects/nexus.png and set this to "/projects/nexus.png"
     image: null,
     tech: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
     featured: false,
