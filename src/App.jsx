@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/Navbar";
 import PageLoader from "./components/ui/PageLoader";
 import ScrollProgressBar from "./components/ui/ScrollProgressBar";
+import BackToTop from "./components/ui/BackToTop";
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Skills from "./sections/Skills/Skills";
@@ -20,6 +21,7 @@ export default function App() {
       <Projects />
       <Contact />
       <Footer />
+      <BackToTop />
     </main>
   );
 }

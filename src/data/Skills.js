@@ -30,3 +30,10 @@ export const skillCategories = [
     ],
   },
 ];
+
+export const currentlyLearning = [
+  "Advanced React",
+  "Data Structures & Algorithms",
+  "Backend Development",
+  "System Design (beginner)",
+];

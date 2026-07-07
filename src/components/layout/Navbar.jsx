@@ -60,7 +60,7 @@ export default function Navbar() {
                 <li key={link.href} className="relative">
                   <a
                     href={link.href}
-                    className={`transition hover:text-white ${
+                    className={`rounded transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B] ${
                       isActive ? "text-white" : ""
                     }`}
                   >
@@ -90,7 +90,7 @@ export default function Navbar() {
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition hover:border-emerald-500/30 hover:bg-emerald-500/10 md:hidden"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition hover:border-emerald-500/30 hover:bg-emerald-500/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#09090B] md:hidden"
           >
             {isOpen ? (
               <HiXMark className="text-xl" />
@@ -116,7 +116,7 @@ export default function Navbar() {
                     <a
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className={`block rounded-xl px-3 py-3 transition hover:bg-emerald-500/10 hover:text-white ${
+                      className={`block rounded-xl px-3 py-3 transition hover:bg-emerald-500/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 ${
                         activeId === link.id ? "bg-emerald-500/10 text-white" : ""
                       }`}
                     >
