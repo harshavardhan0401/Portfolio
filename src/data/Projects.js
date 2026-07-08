@@ -30,7 +30,7 @@ export const projects = [
     description:
       "A cyberpunk-themed sneaker store built for the Indian market, with an AI-powered recommendation engine, real-time Firebase cart sync, and a glassmorphism UI with neon accents.",
     // add a real screenshot to public/projects/nexus.png and set this to "/projects/nexus.png"
-    image: null,
+    image: "https://github.com/user-attachments/assets/b96d14cb-0a9d-4053-a685-d735ee28afeb",
     tech: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
     featured: false,
     liveUrl: "https://nexus-sneakers.netlify.app/",
